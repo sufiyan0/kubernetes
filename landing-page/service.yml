@@ -1,0 +1,15 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: landing-page
+  namespace: nginx
+spec:
+  selector:
+    app: landing-page
+  ports:
+    - protocol: TCP
+      port: 3000
+      targetPort: 3000
+
+
+
