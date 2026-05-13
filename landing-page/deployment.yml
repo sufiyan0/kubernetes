@@ -21,3 +21,8 @@ spec:
         image: sufiyan0/landing-page:latest
         ports:
         - containerPort: 3000
+        livenessProbe:
+          httpGet:
+            path: /
+            port: 3000
+              
